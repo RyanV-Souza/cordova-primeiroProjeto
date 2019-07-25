@@ -1,11 +1,18 @@
 // This is a JavaScript file
 
-$(document).on('click', '#btnEnviar', function(){
-  var valor1 = $("#primeiroValor").val();
-  var valor2 = $("#segundoValor").val();
-  var soma = parseInt(valor1) + parseInt(valor2);
 
+$(document).on('click', '#btnSomar', function(){
+  valor1 = $("#primeiroValor").val();
+  valor2 = $("#segundoValor").val();
+  var soma = parseInt(valor1) + parseInt(valor2);
   $("#resultadoValores").val(soma);
+
+
+});
+
+$(document).on('click', '#btnSubtrair', function(){
+  var subtrair = valor1 - valor2;
+  $("#resultadoValores").val(subtrair);
 
 
 });
